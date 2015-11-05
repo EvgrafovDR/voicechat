@@ -1,0 +1,1 @@
+http://railstutorial.ru/chapters/4_0/beginning - ruby tutorial

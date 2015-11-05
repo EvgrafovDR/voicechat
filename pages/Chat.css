@@ -1,0 +1,81 @@
+body
+{
+   background-color: #F0FFFF;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+}
+#Button1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+}
+#PageHeader1
+{
+   background-color: #FAFAFA;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ui-dialog
+{
+   padding: 4px 4px 4px 4px;
+}
+.ui-dialog .ui-dialog-title
+{
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   color: #222222;
+}
+.ui-dialog .ui-dialog-titlebar
+{
+   padding: 10px 10px 10px 30px;
+}
+.ui-dialog .ui-dialog-titlebar-close
+{
+   right: 10px;
+}
+#TextArea1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   resize: none;
+}
+#Editbox1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#PageHeader2
+{
+   background-color: #66CDAA;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}

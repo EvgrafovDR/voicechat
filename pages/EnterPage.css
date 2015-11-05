@@ -1,0 +1,87 @@
+body
+{
+   background-color: #F0FFFF;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+}
+#wb_Form1
+{
+   background-color: #FFFFF0;
+   border: 0px #000000 solid;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#Editbox1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#Editbox2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text2 div
+{
+   text-align: right;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text3 div
+{
+   text-align: right;
+}
+#AdvancedButton1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+}
+#PageHeader2
+{
+   background-color: #66CDAA;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
