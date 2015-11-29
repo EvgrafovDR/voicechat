@@ -1,9 +1,9 @@
 Server::Application.routes.draw do
-  resources :users do
-  	collection do
-      get 'sendMessage'
-  	end
-  end
+  resources :users #do
+  	#collection do
+      #get 'sendMessage'
+  	#
+  #end
   resources :sessions, only: [:new, :create, :destroy]
   root  'static_pages#home'
   match '/signup',     to: 'users#new',            via: 'get'
