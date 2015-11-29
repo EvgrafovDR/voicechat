@@ -1,0 +1,10 @@
+<% provide(:title, 'Окно чата') %>
+<h1>Окно чата</h1>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@message) do |f| %>
+      <%= f.text_field :content %>
+      <%= f.submit "Отправить", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
