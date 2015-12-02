@@ -11,5 +11,5 @@ Server::Application.routes.draw do
   match '/signin',  	 to: 'sessions#new',         via: 'get'
   match '/signout',		 to: 'sessions#destroy',     via: 'delete'
   match '/chat', 		   to: 'users#sendMessage',    via: 'get'
-  match '/message',      to: 'messages#message', via: 'get'
+  match '/message',    to: 'messages#message',     via: 'get'
 end
