@@ -1,9 +1,10 @@
 Server::Application.routes.draw do
-  resources :users #do
-  	#collection do
-      #get 'sendMessage'
-  	#
-  #end
+  resources :users do
+  	collection do
+      get 'sendMessage'
+  	end
+  end
+  resources :conversations, only: [:create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
   resources :messages, only: [:create, :destroy]
   root  'static_pages#home'
@@ -11,9 +12,5 @@ Server::Application.routes.draw do
   match '/signin',  	 to: 'sessions#new',         via: 'get'
   match '/signout',		 to: 'sessions#destroy',     via: 'delete'
   match '/chat', 		   to: 'users#sendMessage',    via: 'get'
-<<<<<<< HEAD
   match '/message',    to: 'messages#message',     via: 'get'
-=======
-  match '/message',      to: 'messages#message', via: 'get'
->>>>>>> workbranch
 end

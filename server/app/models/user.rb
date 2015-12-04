@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :conversations, :foreign_key => :sender_id
   before_save { self.email = email.downcase }
   before_create :create_remember_token
 
