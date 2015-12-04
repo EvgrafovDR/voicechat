@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @users = User.where.not("id = ?",current_user.id).order("created_at DESC")
     @user = User.find(params[:id])
   end
 
