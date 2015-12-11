@@ -4,7 +4,9 @@ Server::Application.routes.draw do
       get 'sendMessage'
   	end
   end
-  resources :conversations, only: [:create, :destroy]
+  resources :conversations do
+    resources :messages
+  end
   resources :sessions, only: [:new, :create, :destroy]
   resources :messages, only: [:create, :destroy]
   root  'static_pages#home'
