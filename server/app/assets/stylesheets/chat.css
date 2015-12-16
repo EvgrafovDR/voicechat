@@ -1,9 +1,3 @@
-/**
- * GMAIL Like chat css
- * CREDITS: http://css-tricks.com/replicating-google-hangouts-chat/
- *
- */
-
 .chatbox {
     position: fixed;
     position: expression("absolute");
@@ -36,7 +30,7 @@
 .chatboxcontent {
     font-family: arial, sans-serif;
     height: 280px;
-    width: 280px;
+    width: 264px;
     overflow-y: auto;
     padding: 7px;
     border-left: 1px solid #cccccc;
