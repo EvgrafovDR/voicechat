@@ -24,16 +24,6 @@ class UsersController < ApplicationController
   end
 
   def sendMessage
-    #begin
-      s = TCPSocket.new '188.226.166.81', 6565
-      line = s.gets
-      while (line == "")
-        line = s.gets     
-      end  
-      s.close
-    #rescue
-      #retry
-    # 
   end
 
   def edit
