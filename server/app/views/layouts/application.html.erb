@@ -20,10 +20,10 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "callchat", '#', id: "logo" %>
+          <%= link_to "callchat", root_path, id: "logo" %>
           <nav>
             <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
+              <li><%= link_to "Home", root_path %></li>
                 <% if signed_in? %>
                   <li id="fat-menu" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -31,7 +31,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><%= link_to "Профиль", current_user %></li>
-                      <li><%= link_to "Настройки", '#' %></li>
+                      <li><%= link_to "Настройки", edit_user_path(current_user) %></li>
                       <li class="divider"></li>
                       <li>
                         <%= link_to "Выход", signout_path, method: "delete" %>

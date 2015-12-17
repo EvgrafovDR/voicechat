@@ -1,9 +1,5 @@
 Server::Application.routes.draw do
-  resources :users do
-  	collection do
-      get 'sendMessage'
-  	end
-  end
+  resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :conversations do
     resources :messages
@@ -12,6 +8,6 @@ Server::Application.routes.draw do
   match '/signup',     to: 'users#new',            via: 'get'
   match '/signin',  	 to: 'sessions#new',         via: 'get'
   match '/signout',		 to: 'sessions#destroy',     via: 'delete'
-  match '/chat', 		   to: 'users#sendMessage',    via: 'get'
   match '/message',    to: 'messages#message',     via: 'get'
+  match '/send',       to: 'users#sendMessage',    via: 'get'
 end
