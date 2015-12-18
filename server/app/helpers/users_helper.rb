@@ -12,21 +12,23 @@ module UsersHelper
     current_user == conversation.recipient ? conversation.sender : conversation.recipient
   end
 
-  def sendMessage
+  def sendMessage(message)
   	s = TCPSocket.new '188.166.62.207', 7676
 
     line = JSON.parse(s.gets)
     action = line['action']
     if action == "ping"
       s.puts "{\"action\": \"pong\"}\r\n"
-      line = "nice"
     end
 
-    s.puts "{\"action\": \"message\", \"number\":\"79824765200\", \"from\":\"79197061712\", \"text\":\"Привет, хуйло!\", \"id\":\"124135135\"}\r\n"
+    prng = Random.new
+    num = prng.rand(100000000)
+    s.puts "{\"action\": \"message\", \"number\":\"79824765200\", \"from\":\"79197061712\", \"text\":\"Привет, Данила\", \"id\":\"#{num}\"}\r\n"
 
     flag = true
-    text = "empty"
-    while flag
+    text = ""
+    i = 0
+    while i < 10 && flag
       line = JSON.parse(s.gets)
       action = line['action']
       if action == "ping"
@@ -34,9 +36,10 @@ module UsersHelper
       else 
         if action == "message"
           text = line['text']
-          flag == false
+          flag = false
         end
       end
+      i += 1
     end
     s.close
 
