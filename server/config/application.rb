@@ -8,6 +8,8 @@ Bundler.require(:default, Rails.env)
 
 module Server
   class Application < Rails::Application
-      config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+  	config.assets.paths << Emoji.images_path
+  	config.assets.precompile << "emoji/**/*.png"
+    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

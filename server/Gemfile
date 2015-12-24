@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'private_pub'
 gem 'thin'
 gem 'gemoji'
+gem 'html-pipeline'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0', require: false
